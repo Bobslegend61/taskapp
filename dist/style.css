@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+    font-family: cursive;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgb(150, 146, 146);
+}
+
+button {
+    width: 100%;
+    padding: 5px 3px;
+    background-color: #fff;
+    border: none;
+    color: rgb(150, 146, 146);
+}
+
+button:active {
+    outline: none!important;
+    border: none;
+    box-shadow: none;
+}
+
+.container {
+    width: 96%;
+    margin: auto;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    margin-top: 100px;
+    /* border: 1px solid rgb(179, 175, 175); */
+    box-shadow: 0 8px 20px -10px rgb(53, 44, 44);
+}
+
+.todo-list {
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    color: rgb(192, 186, 186)!important;
+    font-size: 20px;
+}
+
+.todo-input input:focus {
+    outline: none;
+}
+
+
+input[type="checkbox"] {
+    float: left; 
+}
+
+
+.todo-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 5px;
+    background-color:#fcf7f7;
+    padding: 10px 3px;
+}
+
+.todo-info .navs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.todo-info .navs button {
+    box-shadow: none;
+}
+
+.todo-info > div:first-child {
+    text-align: left;
+}
+
+.todo-info > div:last-child {
+    text-align: right;
+}
+
+.clear-all {
+    border: 1px solid rgb(221, 134, 134);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.nav-active {
+    border: 1px solid rgb(170, 158, 158);
+    border-radius: 5px;
+}
+
+.todo-list ul {
+    list-style: none;
+    font-size: 17px;
+}
+
+.todo-list li:hover .times {
+    visibility: visible;
+}
+
+.times {
+    color: red!important;
+    float: right;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media(min-width: 800px) {
+    .container {
+        width: 50%;
+    }
+
+    .todo-input {
+        grid-template-columns: 5fr 1fr;
+    }
+
+    .todo-info .navs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clear-all {
+        border: 1px solid rgb(221, 134, 134);
+        width: 50%;
+        border-radius: 20px;
+    }
+}

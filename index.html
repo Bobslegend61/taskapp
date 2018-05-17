@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container" id="todo-module">
+            <h2>Todo App</h2>
+            <div class="todo-input">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter todo here">
+                </div>
+            </div>
+            <div class="todo-list">
+                <ul></ul>
+            </div>
+            <div class="todo-info">
+                <div class="items-left"><span></span> items left</div>
+                <div class="navs">
+                    <button class="all">All</button>
+                    <button class="active">Active</button>
+                    <button class="completed">Completed</button>
+                </div>
+                <div>
+                    <button class="clear-all">Clear Completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
